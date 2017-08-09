@@ -15,11 +15,7 @@ class App extends Component {
           userName: 'bob_loblaw',
           memberSince: '08/23/99',
         },
-          debits: [
-            {
-
-            }
-          ],
+          debits: [],
           credits:[]
           
     }
@@ -85,9 +81,7 @@ return totalCredits - totalDebits;
       />);
       const DebitsComponent = () => (
        <Debits 
-       amount={this.state.debits.amounts}
-       description={this.state.debits.description}
-       date={this.state.debits.date}
+        debits={this.state.debits}
        />
       )
 
